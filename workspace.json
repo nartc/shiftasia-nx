@@ -2,6 +2,10 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "cart": "libs/cart",
+    "cart-publishable": "libs/cart-publishable",
+    "model": "libs/model",
+    "product": "libs/product",
     "shop": "apps/shop",
     "shop-e2e": "apps/shop-e2e"
   }

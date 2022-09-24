@@ -1,11 +1,26 @@
-import { NxWelcomeComponent } from './nx-welcome.component';
 import { Component } from '@angular/core';
+import { RouterLinkWithHref, RouterOutlet } from '@angular/router';
+import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent],
+  imports: [NxWelcomeComponent, RouterOutlet, RouterLinkWithHref],
   selector: 'shiftasia-nx-root',
-  template: ` <shiftasia-nx-nx-welcome></shiftasia-nx-nx-welcome> `,
+  template: `
+    <ul>
+      <li>
+        <a routerLink="/">Home</a>
+      </li>
+      <li>
+        <a routerLink="/cart">Cart</a>
+      </li>
+      <li>
+        <a routerLink="/product">Product</a>
+      </li>
+    </ul>
+    <router-outlet></router-outlet>
+    <shiftasia-nx-nx-welcome></shiftasia-nx-nx-welcome>
+  `,
   styles: [],
 })
 export class AppComponent {
