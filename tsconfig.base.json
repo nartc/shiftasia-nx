@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@shiftasia-nx/auth": ["libs/auth/src/index.ts"],
       "@shiftasia-nx/cart": ["libs/cart/src/index.ts"],
       "@shiftasia-nx/model": ["libs/model/src/index.ts"],
       "@shiftasia-nx/product": ["libs/product/src/index.ts"],

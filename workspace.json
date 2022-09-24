@@ -2,6 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "auth": "libs/auth",
     "cart": "libs/cart",
     "cart-remote": "apps/cart-remote",
     "cart-remote-e2e": "apps/cart-remote-e2e",
