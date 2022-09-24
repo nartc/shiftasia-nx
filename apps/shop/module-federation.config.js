@@ -1,4 +1,4 @@
 module.exports = {
   name: 'shop',
-  remotes: ['cart-remote'],
+  remotes: ['cart-remote', 'product-remote'],
 };

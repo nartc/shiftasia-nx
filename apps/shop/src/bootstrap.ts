@@ -20,8 +20,8 @@ bootstrapApplication(AppComponent, {
       },
       {
         path: 'product',
-        loadComponent: () =>
-          import('@shiftasia-nx/product').then((m) => m.ProductComponent),
+        loadChildren: () =>
+          import('product-remote/Routes').then((m) => m.RemoteRoutes),
       },
     ]),
   ],

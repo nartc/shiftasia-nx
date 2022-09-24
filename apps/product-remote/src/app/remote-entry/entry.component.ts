@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  selector: 'shiftasia-nx-cart-remote-entry',
+  selector: 'shiftasia-nx-product-remote-entry',
   template: `<router-outlet></router-outlet>`,
 })
 export class RemoteEntryComponent {}

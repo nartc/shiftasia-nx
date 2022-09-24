@@ -7,6 +7,8 @@
     "cart-remote-e2e": "apps/cart-remote-e2e",
     "model": "libs/model",
     "product": "libs/product",
+    "product-remote": "apps/product-remote",
+    "product-remote-e2e": "apps/product-remote-e2e",
     "shift": "libs/shift",
     "shift-e2e": "apps/shift-e2e",
     "shop": "apps/shop",
