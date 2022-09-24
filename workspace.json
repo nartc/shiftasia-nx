@@ -3,9 +3,12 @@
   "version": 2,
   "projects": {
     "cart": "libs/cart",
-    "cart-publishable": "libs/cart-publishable",
+    "cart-remote": "apps/cart-remote",
+    "cart-remote-e2e": "apps/cart-remote-e2e",
     "model": "libs/model",
     "product": "libs/product",
+    "shift": "libs/shift",
+    "shift-e2e": "apps/shift-e2e",
     "shop": "apps/shop",
     "shop-e2e": "apps/shop-e2e"
   }

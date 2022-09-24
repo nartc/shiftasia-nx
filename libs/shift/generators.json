@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "shift",
+  "version": "0.0.1",
+  "generators": {
+    "shift": {
+      "factory": "./src/generators/shift/generator",
+      "schema": "./src/generators/shift/schema.json",
+      "description": "shift generator"
+    },
+    "convert-to-publishable": {
+      "factory": "./src/generators/convert-to-publishable/generator",
+      "schema": "./src/generators/convert-to-publishable/schema.json",
+      "description": "convert-to-publishable generator"
+    }
+  }
+}

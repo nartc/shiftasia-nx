@@ -5,7 +5,7 @@
   "prefix": "shiftasia-nx",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:ng-packagr-lite",
+      "executor": "@nrwl/angular:package",
       "outputs": ["dist/libs/product"],
       "options": {
         "project": "libs/product/ng-package.json"

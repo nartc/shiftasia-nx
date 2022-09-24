@@ -18,6 +18,7 @@
       "@shiftasia-nx/cart": ["libs/cart/src/index.ts"],
       "@shiftasia-nx/model": ["libs/model/src/index.ts"],
       "@shiftasia-nx/product": ["libs/product/src/index.ts"],
+      "@shiftasia-nx/shift": ["libs/shift/src/index.ts"],
       "@shiftasia/cart": ["libs/cart-publishable/src/index.ts"]
     }
   },

@@ -1,0 +1,60 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shift/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/shift",
+        "main": "libs/shift/src/index.ts",
+        "tsConfig": "libs/shift/tsconfig.lib.json",
+        "assets": [
+          "libs/shift/*.md",
+          {
+            "input": "./libs/shift/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/shift/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./libs/shift",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./libs/shift",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shift/**/*.ts",
+          "libs/shift/generators.json",
+          "libs/shift/executors.json",
+          "libs/shift/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shift"],
+      "options": {
+        "jestConfig": "libs/shift/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
