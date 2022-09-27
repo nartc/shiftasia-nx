@@ -3,8 +3,6 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
-// import { RemoteEntryComponent } from './app/remote-entry/entry.component';
-// import { RemoteRoutes } from './app/remote-entry/routes';
 
 if (environment.production) {
   enableProdMode();
